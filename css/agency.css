@@ -226,6 +226,10 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
+    animation-name: bgs;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
   background-image: url('../img/sg/fw_7.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -752,4 +756,31 @@ body {
             }
 #logohead{
     width: 30%;
+}
+
+#bgs{
+    position: relative;
+    margin: 0, auto;
+}
+#bgs img{
+    width: 100%;
+    position:absolute;
+  left:0;
+}
+@keyframes bgs {
+  0% {
+    background-image: url(../img/sg/fw1.jpg);
+  }
+  25% {
+    background-image: url(../img/sg/fw2.jpg);
+  }
+  50% {
+    background-image: url(../img/sg/fw3.jpg);
+  }
+  75% {
+    background-image: url(../img/sg/fw4.jpg);
+  }
+  100% {
+    background-image: url(../img/sg/fw5.jpg);
+  }
 }
